@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.scss">
+
+  <title>Frontend Mentor | E-commerce product page</title>
+
+  <script src="main.js" type="module" defer></script>
+</head>
+
+<body>
+  <site-navbar site-name="Sneakers">
+    <main-navigation slot="navigation"></main-navigation>
+  </site-navbar>
+
+  <div class="wrapper">
+    <image-gallery>
+      <img src="images/image-product-1.jpg" slot="large" class="gallery__image-large" alt="">
+      <img src="images/image-product-1-thumbnail.jpg" slot="small" class="gallery__image-small" data-index="0" alt="">
+      <img src="images/image-product-2.jpg" slot="large" class="gallery__image-large" alt="">
+      <img src="images/image-product-2-thumbnail.jpg" slot="small" class="gallery__image-small" data-index="1" alt="">
+      <img src="images/image-product-3.jpg" slot="large" class="gallery__image-large" alt="">
+      <img src="images/image-product-3-thumbnail.jpg" slot="small" class="gallery__image-small" data-index="2" alt="">
+      <img src="images/image-product-4.jpg" slot="large" class="gallery__image-large" alt="">
+      <img src="images/image-product-4-thumbnail.jpg" slot="small" class="gallery__image-small" data-index="3" alt="">
+    </image-gallery>
+  </div>
+
+  <p>Sneaker Company!</p>
+
+  <p>Fall Limited Edition Sneakers</p>
+
+  <p>These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+
+  <p>$125.00 <span>50%</span></p>
+  <p>$250.00</p>
+
+  <p>0</p>
+  <p>Add to cart</p>
+
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+</body>
+
+</html>
