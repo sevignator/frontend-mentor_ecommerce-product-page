@@ -4,14 +4,20 @@
   "description": "![Design preview for the E-commerce product page coding challenge](./design/desktop-preview.jpg)",
   "private": true,
   "scripts": {
-    "dev": "parcel src/index.html --open",
-    "build": "parcel build src/index.html"
+    "watch": "webpack --watch",
+    "build": "webpack"
   },
   "author": "Mikael Sevigny",
   "license": "ISC",
   "devDependencies": {
-    "@parcel/transformer-sass": "^2.0.0",
-    "parcel": "^2.0.0"
+    "css-loader": "^6.4.0",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.4.0",
+    "sass": "^1.43.2",
+    "sass-loader": "^12.2.0",
+    "style-loader": "^3.3.0",
+    "webpack": "^5.59.0",
+    "webpack-cli": "^4.9.1"
   },
   "dependencies": {
     "lit": "^2.0.2"

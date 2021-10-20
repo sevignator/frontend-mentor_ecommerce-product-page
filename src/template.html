@@ -6,17 +6,34 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="styles.scss">
-
   <title>Frontend Mentor | E-commerce product page</title>
 
-  <script src="main.js" type="module" defer></script>
+  <script src="index.js"></script>
 </head>
 
 <body>
-  <site-navbar site-name="Sneakers">
-    <main-navigation slot="navigation"></main-navigation>
-  </site-navbar>
+  <header class="navbar">
+    <div class="navbar__left">
+      <site-logo url="/index.html">
+        <img src="./images/logo.svg" alt="">
+      </site-logo>
+      <main-nav>
+        <nav-link><a href="#">Link 1</a></nav-link>
+        <nav-link><a href="#">Link 2</a></nav-link>
+        <nav-link><a href="#">Link 3</a></nav-link>
+      </main-nav>
+    </div>
+    <div class="navbar__right">
+      <user-actions>
+        <user-cart slot="cart"></user-cart>
+        <user-profile slot="profile">
+          <a slot="link" href="#a">
+            <img slot="avatar" src="./images/image-avatar.png" alt="">
+          </a>
+        </user-profile>
+      </user-actions>
+    </div>
+  </header>
 
   <div class="wrapper">
     <image-gallery>
@@ -42,11 +59,6 @@
 
   <p>0</p>
   <p>Add to cart</p>
-
-  <!-- <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div> -->
 </body>
 
 </html>

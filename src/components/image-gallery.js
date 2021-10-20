@@ -7,11 +7,9 @@ class ImageGallery extends LitElement {
       grid-template-columns: repeat(4, 1fr);
       gap: 30px;
     }
-
     .main-image {
       grid-column: 1 / span 4;
     }
-
     ::slotted(img) {
       object-fit: cover;
       width: 100%;
@@ -67,6 +65,7 @@ class ImageGallery extends LitElement {
   }
 
   _clickHandler(e) {
+    console.log(e);
     this._setMainImage(e.target.dataset.index);
   }
 }

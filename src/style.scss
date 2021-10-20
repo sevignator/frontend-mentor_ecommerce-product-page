@@ -29,6 +29,23 @@ body {
   max-width: 600px;
 }
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+
+  &__left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+
+  &__right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
 .gallery__image-large {
   display: none;
 }
